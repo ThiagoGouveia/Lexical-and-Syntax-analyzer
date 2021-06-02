@@ -578,9 +578,9 @@ class MyAnalisadorSintatico(AnalisadorSintatico):
                 self.leProxToken()
                 self.exp()
         elif (self.proxTokenIs(self.tokens['INT'])):
-            self.leProxToken()
+                self.leProxToken()
         elif (self.proxTokenIs(self.tokens['VAZIO'])):
-            self.leProxToken()
+                self.leProxToken()
             
         else:
             print('\nErro Sintático: token encontrado:'+  self.A.tokenReconhecido)
